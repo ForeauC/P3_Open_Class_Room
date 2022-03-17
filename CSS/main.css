@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 body {
@@ -9,6 +10,7 @@ a {
   color: black;
 }
 
+/*----------- header "logo" -------*/
 .header {
   width: 100%;
   height: 100%;
@@ -23,6 +25,7 @@ a {
   padding: 20px 0 10px 0;
 }
 
+/*----------- Location display ------*/
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +40,7 @@ a {
   margin: 15px 15px 0 0;
 }
 
+/*----- Section presentation and explore button -----*/
 .presentation {
   width: 100%;
   text-align: center;
@@ -67,6 +71,7 @@ a {
   margin-bottom: 50px;
 }
 
+/*---------- Section functioning --------*/
 .functioning {
   width: 100%;
 }
@@ -118,6 +123,7 @@ a {
   font-size: 20px;
 }
 
+/*------------- Section restaurant -----*/
 .restaurant {
   width: 100%;
   margin-bottom: 50px;
@@ -189,6 +195,7 @@ a {
   left: 88%;
 }
 
+/*--------- footer -----*/
 .footer {
   background-color: #4B4B4B;
   color: white;
@@ -230,5 +237,37 @@ a {
 
 .footer__li-text {
   margin: 0;
+}
+
+/*--------------- menu n°1 ---------------*/
+/*-------- header "icon" "logo" -----*/
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__icon {
+  padding-left: 20px;
+}
+
+.header__logo {
+  padding-left: 60px;
+}
+
+.restaurant__img {
+  width: 100%;
+  height: 300px;
+}
+
+.restaurant__img img {
+  width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */
