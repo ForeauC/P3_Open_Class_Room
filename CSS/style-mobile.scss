@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body{
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 10px 13px -7px #000000;
+    &__logo{
+        font-family: 'Shrikhand', Verdana, Tahoma, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0 10px 0;
+    }
+}
+
+$dark-grey: #E9E9E9;
+
+.location{
+    display: flex;
+    justify-content: center;
+    background-color: $dark-grey;
+    &__icon{
+        margin: 15px 15px 0 0;
+    }
+}
+
+$light-grey: #f2f2f2;
+$pink: #FF79DA;
+$purple: #9356DC;
+
+.presentation{
+    width: 100%;
+    text-align: center;
+    background-color: $light-grey;
+    &__title{
+        margin-top: 0;
+        padding: 40px 50px 0 50px;
+    }
+    &__text{
+        padding: 0 30px 10px 30px;
+        font-size: 18px;
+        color: gray;
+    }
+    &__button{
+        width: 220px;
+        height: 50px;
+        border: none;
+        background: linear-gradient($pink,$purple);
+        color: #ffffff;
+        border-radius: 30px;
+        box-shadow: 0px 10px 13px -7px #c0bfbf;
+        margin-bottom: 50px;
+    }
+}
+
+.functioning{
+    width: 100%;
+    &__title{
+        padding: 30px 0 20px 20px;
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+        height: 70px;
+        margin: 20px 20px 20px 30px;
+        border-radius: 20px;
+        box-shadow: 2px 5px 16px 0px #c0bfbf;
+        position: relative;
+        &:hover{
+            background-color: rgba(146, 86, 220, 0.13);
+        }
+    }
+    &__number{
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: white;
+        background-color: $purple;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        top: 33%;
+        right: 94%;
+        transform: translate(-50%, -50%);
+    }
+    &__icon{
+        margin-left: 30px;
+        margin-right: 20px;
+        color: grey;
+        font-size: 20px;
+    }
+}
+
+$green: #99E2D0;
+
+.restaurant{
+    width: 100%;
+    margin-bottom: 50px;
+    &__title{ 
+        padding: 30px 0 10px 10px;
+    }
+    &__card{
+        flex-basis: calc(100% - 40px);
+        height: auto;
+        margin: 0 20px 20px 20px;
+        border-radius: 20px;
+        box-shadow: 2px 5px 16px 0px #c0bfbf;
+    }
+    &__card-img{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        & img{
+            width: 100%;
+            height: 200px;
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+        }
+    }
+    &__card-mention{
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $green;
+        border: none;
+        color: green;
+        position: absolute;
+        bottom: 65%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+    }
+    &__card-body{
+        padding-left: 10px;
+        position: relative;
+    }
+    &__card-title{
+        margin-bottom: 5px;
+    }
+    &__card-location{
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    &__card-icon{
+        font-size: 20px;
+        position: absolute;
+        top: 0%;
+        left: 88%;
+    }
+}
+
+.footer{
+    background-color: #4B4B4B ;
+    color: white;
+    padding-bottom: 20px;
+    &__logo{
+        margin: 0;
+        padding: 20px 0 20px 20px;
+        font-family: 'Shrikhand', Verdana, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+    &__ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    &__li{
+        display: flex;
+        align-items: center;
+        height: 30px;
+        padding-left: 20px;
+        & a{
+            color: white;
+        }
+    }
+    &__li-icon{
+        width: 12px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+    &__li-text{
+        margin: 0;
+    }
+}
