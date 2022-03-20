@@ -241,7 +241,7 @@ a {
 
 /*--------------- menu n°1 ---------------*/
 /*-------- header "icon" "logo" -----*/
-.header {
+.header-menu {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,17 +251,19 @@ a {
           align-items: center;
 }
 
-.header__icon {
+.header-menu__icon {
   padding-left: 20px;
 }
 
-.header__logo {
+.header-menu__logo {
+  font-family: 'Shrikhand', Verdana, Tahoma, sans-serif;
   padding-left: 60px;
 }
 
+/*-------- Restaurant picture ------*/
 .restaurant__img {
   width: 100%;
-  height: 300px;
+  height: 270px;
 }
 
 .restaurant__img img {
@@ -269,5 +271,120 @@ a {
   height: 270px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/*--------- Section menu ---------*/
+.menu {
+  position: relative;
+  z-index: 1;
+  margin-top: -2rem;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 30px 30px 0 0;
+}
+
+.menu__name-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+.menu__name {
+  font-family: 'Shrikhand', Verdana, Tahoma, sans-serif;
+  padding-left: 10px;
+}
+
+.menu__icon {
+  padding-right: 40px;
+  font-size: 22px;
+}
+
+.menu__title {
+  padding-left: 10px;
+  font-weight: 200;
+  font-size: 18px;
+  border-bottom: solid 1px #99E2D0;
+}
+
+.menu__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.menu__card-body {
+  width: 100%;
+}
+
+.menu__card-dishe {
+  margin: 0;
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.menu__card-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.menu__card-text {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.menu__card-price {
+  margin: 0;
+  padding-right: 10px;
+}
+
+.menu__card-icon {
+  font-size: 25px;
+  visibility: hidden;
+}
+
+.menu__button {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.menu__button button {
+  width: 180px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+.footer--menu {
+  padding-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
