@@ -80,10 +80,15 @@
             margin: 0;
             font-size: 15px;
             font-weight: 200;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 85%;
         }
         &-price{
             margin: 0;
-            padding-right: 10px;
+            text-align: end;
+            width: 15%;
         }
         &-icon{
             font-size: 25px;

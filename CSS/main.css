@@ -129,8 +129,24 @@ a {
   margin-bottom: 50px;
 }
 
+@media (max-width: 1024px) and (min-width: 640px) {
+  .restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .restaurant__title {
-  padding: 30px 0 10px 10px;
+  padding: 30px 0 10px 20px;
+}
+
+@media (max-width: 1024px) and (min-width: 640px) {
+  .restaurant__title {
+    width: 80%;
+  }
 }
 
 .restaurant__card {
@@ -141,6 +157,25 @@ a {
   border-radius: 20px;
   -webkit-box-shadow: 2px 5px 16px 0px #c0bfbf;
           box-shadow: 2px 5px 16px 0px #c0bfbf;
+}
+
+@media (max-width: 1024px) and (min-width: 640px) {
+  .restaurant__card {
+    -ms-flex-preferred-size: calc(50% - 45px);
+        flex-basis: calc(50% - 45px);
+  }
+  .restaurant__card:nth-child(2) {
+    margin: 0 30px 30px 30px;
+  }
+  .restaurant__card:nth-child(3) {
+    margin: 0 30px 30px 0;
+  }
+  .restaurant__card:nth-child(4) {
+    margin: 0 30px 30px 30px;
+  }
+  .restaurant__card:nth-child(5) {
+    margin: 0 30px 30px 0;
+  }
 }
 
 .restaurant__card-img {
@@ -355,11 +390,16 @@ a {
   margin: 0;
   font-size: 15px;
   font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 85%;
 }
 
 .menu__card-price {
   margin: 0;
-  padding-right: 10px;
+  text-align: end;
+  width: 15%;
 }
 
 .menu__card-icon {

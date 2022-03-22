@@ -1,0 +1,5 @@
+@mixin tablette-only {
+    @media #{map-get($device-media-queries, tablet)} {
+        @content;
+    }
+}
