@@ -139,11 +139,27 @@ a {
   }
 }
 
+@media (min-width: 1025px) {
+  .restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .restaurant__title {
   padding: 30px 0 10px 20px;
 }
 
 @media (max-width: 1024px) and (min-width: 640px) {
+  .restaurant__title {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) {
   .restaurant__title {
     width: 80%;
   }
@@ -175,6 +191,19 @@ a {
   }
   .restaurant__card:nth-child(5) {
     margin: 0 30px 30px 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .restaurant__card {
+    -ms-flex-preferred-size: calc(25% - 37.5px);
+        flex-basis: calc(25% - 37.5px);
+  }
+  .restaurant__card:nth-child(n+2):nth-child(-n+4) {
+    margin: 0 0 30px 30px;
+  }
+  .restaurant__card:nth-child(5) {
+    margin: 0 30px 30px 30px;
   }
 }
 
@@ -318,6 +347,16 @@ a {
   border-radius: 30px 30px 0 0;
 }
 
+@media (min-width: 1025px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .menu__name-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,6 +368,12 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 20px;
+}
+
+@media (min-width: 1025px) {
+  .menu__name-icon {
+    width: 100%;
+  }
 }
 
 .menu__name {
@@ -348,6 +393,12 @@ a {
   border-bottom: solid 1px #99E2D0;
 }
 
+@media (min-width: 1025px) {
+  .menu__title {
+    width: 100%;
+  }
+}
+
 .menu__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,6 +410,13 @@ a {
   margin: 10px;
   background-color: white;
   border-radius: 20px;
+}
+
+@media (min-width: 1025px) {
+  .menu__card {
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+  }
 }
 
 .menu__card-body {
@@ -411,6 +469,12 @@ a {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+@media (min-width: 1025px) {
+  .menu__button {
+    width: 100%;
+  }
 }
 
 .menu__button button {

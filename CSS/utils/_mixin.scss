@@ -3,3 +3,10 @@
         @content;
     }
 }
+
+@mixin desktop-only {
+    @media #{map-get($device-media-queries, desktop)} {
+        @content;
+    }
+}
+
