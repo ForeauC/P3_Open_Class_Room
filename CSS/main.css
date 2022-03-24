@@ -110,10 +110,10 @@ a {
   border: none;
   border-radius: 50%;
   position: absolute;
-  top: 33%;
-  right: 94%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-left: -10px;
+  /*top: 30%;*/
+  /*right: 95%;*/
+  /*transform: translate(-50%, -50%);*/
 }
 
 .functioning__icon {
@@ -232,10 +232,8 @@ a {
   border: none;
   color: green;
   position: absolute;
-  bottom: 65%;
-  left: 85%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 5px;
+  right: 5px;
 }
 
 .restaurant__card-body {
@@ -253,10 +251,16 @@ a {
 }
 
 .restaurant__card-icon {
-  font-size: 20px;
   position: absolute;
   top: 0%;
   left: 88%;
+  fill: white;
+  stroke: black;
+}
+
+.restaurant__card-icon:hover {
+  fill: url(#my-cool-gradient) #FF79DA;
+  stroke: none;
 }
 
 /*--------- footer -----*/
@@ -384,6 +388,13 @@ a {
 .menu__icon {
   padding-right: 40px;
   font-size: 22px;
+  fill: white;
+  stroke: black;
+}
+
+.menu__icon:hover {
+  fill: url(#my-cool-gradient) #FF79DA;
+  stroke: none;
 }
 
 .menu__title {

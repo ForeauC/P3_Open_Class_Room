@@ -76,9 +76,10 @@
         border: none;
         border-radius: 50%;
         position: absolute;
-        top: 33%;
-        right: 94%;
-        transform: translate(-50%, -50%);
+        margin-left: -10px;
+        /*top: 30%;*/
+        /*right: 95%;*/
+        /*transform: translate(-50%, -50%);*/
     }
     &__icon{
         margin-left: 30px;
@@ -162,9 +163,8 @@
         border: none;
         color: green;
         position: absolute;
-        bottom: 65%;
-        left: 85%;
-        transform: translate(-50%, -50%);
+        top: 5px;
+        right: 5px;
     }
     &__card-body{
         padding-left: 10px;
@@ -178,10 +178,15 @@
         padding-bottom: 10px;
     }
     &__card-icon{
-        font-size: 20px;
         position: absolute;
         top: 0%;
         left: 88%;
+        fill: white;
+        stroke: black;
+        &:hover{
+            fill: url(#my-cool-gradient) $pink;
+            stroke: none;
+        }
     }
 }
 

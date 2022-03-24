@@ -53,6 +53,12 @@
     &__icon{
         padding-right: 40px;
         font-size: 22px;
+        fill: white;
+        stroke: black;
+        &:hover{
+            fill: url(#my-cool-gradient) $pink;
+            stroke: none;
+        }
     }
     &__title{
         padding-left: 10px;
