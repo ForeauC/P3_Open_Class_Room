@@ -1,5 +1,4 @@
-/*--------------- menu n°1 ---------------*/
-
+/*---- Page menu ----*/
 /*-------- header "icon" "logo" -----*/
 .header-menu{
     width: 100%;
@@ -61,12 +60,31 @@
         }
     }
     &__title{
-        padding-left: 10px;
-        font-weight: 200;
-        font-size: 18px;
-        border-bottom: solid 1px $green;
-        @include desktop-only{
-            width: 100%;
+        width: 80%;
+        &-name{
+            padding-left: 10px;
+            font-weight: 200;
+            font-size: 18px;
+            margin-bottom: 0;
+            &--anim1{
+                animation: fadein 3s;
+            }
+            &--anim2{
+                animation: fadein 6s;
+            }
+            &--anim3{
+                animation: fadein 9s;
+            }
+            @include desktop-only{
+                width: 100%;
+            }
+            &-hr{
+                width: 40px;
+                height: 2px;
+                background-color: $green;
+                border: none;
+                margin-left: 10px; 
+            }
         }
     }
     &__card{
@@ -76,6 +94,15 @@
         margin: 10px;
         background-color: white;
         border-radius: 20px;
+        &--anim1{
+            animation: fadein 3s;
+        }
+        &--anim2{
+            animation: fadein 6s;
+        }
+        &--anim3{
+            animation: fadein 9s;
+        }
         @include desktop-only{
             flex-basis: calc(50% - 30px);
         }
@@ -130,6 +157,15 @@
             color: white;
             font-weight: 600;
         }
+    }
+}
+/* animation for "menu__title and menu__card" */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
