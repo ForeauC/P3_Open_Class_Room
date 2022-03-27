@@ -103,10 +103,14 @@
             width: 20%;
             height: 69px;
             transition: width 1s;
+            
             font-size: 25px;
             line-height: 69px;
             text-align: center;
             border-radius: 0 20px 20px 0;
+        }
+        &:hover > &-icon i{
+            animation: spin 1s linear;
         }
         &--anim1{
             animation: fadein 3s;
@@ -177,6 +181,17 @@
         }
     }
 }
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
 /* animation for "menu__title and menu__card" */
 @keyframes fadein {
     from {
@@ -190,8 +205,3 @@
 .footer--menu{
     padding-top: 20px;
 }
-
-
-
-
-

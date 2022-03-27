@@ -479,6 +479,11 @@ a {
   border-radius: 0 20px 20px 0;
 }
 
+.menu__card:hover > .menu__card-icon i {
+  -webkit-animation: spin 1s linear;
+          animation: spin 1s linear;
+}
+
 .menu__card--anim1 {
   -webkit-animation: fadein 3s;
           animation: fadein 3s;
@@ -572,6 +577,28 @@ a {
   border-radius: 40px;
   color: white;
   font-weight: 600;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /* animation for "menu__title and menu__card" */
