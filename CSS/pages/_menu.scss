@@ -94,6 +94,20 @@
         margin: 10px;
         background-color: white;
         border-radius: 20px;
+        &:hover > &-body{
+            width: 80%;
+            transition: width 1s;
+        }
+        &:hover > &-icon{
+            visibility: visible;
+            width: 20%;
+            height: 69px;
+            transition: width 1s;
+            font-size: 25px;
+            line-height: 69px;
+            text-align: center;
+            border-radius: 0 20px 20px 0;
+        }
         &--anim1{
             animation: fadein 3s;
         }
@@ -133,12 +147,16 @@
         }
         &-price{
             margin: 0;
+            padding-right: 20px;
             text-align: end;
             width: 15%;
         }
         &-icon{
-            font-size: 25px;
+            width: 0px;
             visibility: hidden;
+            font-size: 0px;
+            color: white;
+            background-color: $green;
         }
     }
     &__button{
