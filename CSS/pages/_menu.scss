@@ -57,6 +57,7 @@
         &:hover{
             fill: url(#my-cool-gradient) $pink;
             stroke: none;
+            animation: fill 3s;
         }
     }
     &__title{
@@ -184,6 +185,7 @@
     }
 }
 
+/* animation for "check icone in menu" */
 @keyframes spin{
     0%{
         transform: rotate(0deg);
@@ -196,6 +198,16 @@
 
 /* animation for "menu__title and menu__card" */
 @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* animation "icon heart" */
+@keyframes fill {
     from {
         opacity: 0;
     }

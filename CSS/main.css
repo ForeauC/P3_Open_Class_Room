@@ -41,6 +41,7 @@ a {
   bottom: 0;
 }
 
+/* animation " opacity and display loader" */
 @-webkit-keyframes PageTransition {
   0% {
     opacity: 1;
@@ -55,7 +56,6 @@ a {
     position: relative;
   }
 }
-
 @keyframes PageTransition {
   0% {
     opacity: 1;
@@ -334,6 +334,26 @@ a {
 .restaurant__card-icon:hover {
   fill: url(#my-cool-gradient) #FF79DA;
   stroke: none;
+  -webkit-animation: fill 3s;
+          animation: fill 3s;
+}
+
+/* animation "icon heart" */
+@-webkit-keyframes fill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*--------- footer -----*/
@@ -468,6 +488,8 @@ a {
 .menu__icon:hover {
   fill: url(#my-cool-gradient) #FF79DA;
   stroke: none;
+  -webkit-animation: fill 3s;
+          animation: fill 3s;
 }
 
 .menu__title {
@@ -644,6 +666,7 @@ a {
   font-weight: 600;
 }
 
+/* animation for "check icone in menu" */
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -654,7 +677,6 @@ a {
             transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -676,6 +698,16 @@ a {
   }
 }
 @keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* animation "icon heart" */
+@keyframes fill {
   from {
     opacity: 0;
   }

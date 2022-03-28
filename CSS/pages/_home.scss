@@ -28,6 +28,7 @@
     }
 }
 
+/* animation " opacity and display loader" */
 @keyframes PageTransition {
     0%{
         opacity: 1;
@@ -239,7 +240,18 @@
         &:hover{
             fill: url(#my-cool-gradient) $pink;
             stroke: none;
+            animation: fill 3s;
         }
+    }
+}
+
+/* animation "icon heart" */
+@keyframes fill {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
