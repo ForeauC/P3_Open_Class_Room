@@ -305,7 +305,7 @@ a {
 }
 
 .restaurant__card-icon:hover {
-  fill: url(#my-cool-gradient) #FF79DA;
+  fill: url(.my-cool-gradient) #FF79DA;
   stroke: none;
   -webkit-animation: fill 3s;
           animation: fill 3s;

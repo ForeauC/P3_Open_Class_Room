@@ -223,7 +223,7 @@
         fill: white;
         stroke: black;
         &:hover{
-            fill: url(#my-cool-gradient) $pink;
+            fill: url(.my-cool-gradient) $pink;
             stroke: none;
             animation: fill 3s;
         }
