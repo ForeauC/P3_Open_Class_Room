@@ -9,6 +9,68 @@ a {
   color: black;
 }
 
+/*----------- Spin Loader ---------*/
+.loader {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-animation: PageTransition 5s forwards;
+          animation: PageTransition 5s forwards;
+}
+
+.loader__custom {
+  border-top: 10px solid #FF79DA;
+  border-bottom: 10px solid #9356DC;
+  border-left: 10px solid #FF79DA;
+  border-right: 10px solid #9356DC;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes PageTransition {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    position: fixed;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    position: relative;
+  }
+}
+
+@keyframes PageTransition {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    position: fixed;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    position: relative;
+  }
+}
+
 /*----------- header "logo" -------*/
 .header {
   width: 100%;
@@ -480,8 +542,8 @@ a {
 }
 
 .menu__card:hover > .menu__card-icon i {
-  -webkit-animation: spin 1s linear;
-          animation: spin 1s linear;
+  -webkit-animation: spin 0.5s linear;
+          animation: spin 0.5s linear;
 }
 
 .menu__card--anim1 {
@@ -511,6 +573,9 @@ a {
 }
 
 .menu__card-dishe {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
   padding-top: 15px;
   font-size: 18px;
