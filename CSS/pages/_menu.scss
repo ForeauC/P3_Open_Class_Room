@@ -185,37 +185,6 @@
     }
 }
 
-/* animation for "check icone in menu" */
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-
-/* animation for "menu__title and menu__card" */
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* animation "icon heart" */
-@keyframes fill {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 .footer--menu{
     padding-top: 20px;
 }
