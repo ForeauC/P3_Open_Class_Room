@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     opacity: 1;
-    animation: PageTransition 5s forwards; 
+    animation: PageTransition 3s forwards; 
     &__custom{
         border-top: 10px solid #FF79DA;
         border-bottom: 10px solid #9356DC;
@@ -225,7 +225,7 @@
         &:hover{
             fill: url(.my-cool-gradient) $pink;
             stroke: none;
-            animation: fill 3s;
+            animation: fill 1.5s;
         }
     }
 }
