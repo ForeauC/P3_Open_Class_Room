@@ -83,6 +83,10 @@
     width: 100%;
     &__title{
         padding: 30px 0 20px 20px;
+        @include desktop-only{
+            padding-left: 0;
+            text-align: center;
+        }
     }
     &__card{
         display: flex;
@@ -146,7 +150,9 @@
             width: 80%;
         }
         @include desktop-only{
-            width: 80%;
+            width: 100%;
+            padding-left: 0;
+            text-align: center;
         }
     }
     &__card{
@@ -240,16 +246,28 @@
         padding: 20px 0 20px 20px;
         font-family: 'Shrikhand', Verdana, Tahoma, sans-serif;
         font-size: 20px;
+        @include desktop-only{
+            text-align: center;
+        }
     }
     &__ul{
         list-style-type: none;
         padding: 0;
+        @include desktop-only{
+            width: 100%;
+            display: flex;
+        }
     }
     &__li{
         display: flex;
         align-items: center;
         height: 30px;
         padding-left: 20px;
+        @include desktop-only{
+            width: 25%;
+            justify-content: center;
+            padding-left: 0;
+        }
         & a{
             color: white;
         }
