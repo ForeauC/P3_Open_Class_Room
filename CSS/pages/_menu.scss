@@ -101,6 +101,7 @@
         }
         &:hover > &-icon{
             visibility: visible;
+            animation: appear 1s;
             width: 20%;
             height: 69px;
             transition: width 1s;
@@ -126,6 +127,7 @@
         }
         &-body{
             width: 100%;
+            transition: width 1s;
         }
         &-dishe{
             white-space: nowrap;
@@ -161,6 +163,7 @@
         &-icon{
             width: 0px;
             visibility: hidden;
+            animation: vanish 1s;
             font-size: 0px;
             color: white;
             background-color: $green;
@@ -181,6 +184,7 @@
             border-radius: 40px;
             color: white;
             font-weight: 600;
+            cursor: pointer;
         }
     }
 }
