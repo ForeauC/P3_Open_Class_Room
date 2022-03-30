@@ -81,11 +81,19 @@
 /*---------- Section functioning --------*/
 .functioning{
     width: 100%;
+    @include desktop-only{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     &__title{
         padding: 30px 0 20px 20px;
+        @include tablette-only{
+            padding-left: 30px;
+        }
         @include desktop-only{
-            padding-left: 0;
-            text-align: center;
+            width: 100%;
+            padding-left: 30px;
         }
     }
     &__card{
@@ -104,8 +112,14 @@
             margin: 20px auto 20px auto
         }
         @include desktop-only{
-            width: 590px;
-            margin: 20px auto 20px auto;
+            width: 30%;
+            margin: 0;
+            &:nth-child(2){
+                margin-left: 30px;
+            }
+            &:nth-child(4){
+                margin-right: 30px;
+            }
         }
     }
     &__number{
@@ -148,11 +162,11 @@
         padding: 30px 0 10px 20px;
         @include tablette-only{
             width: 80%;
+            padding-left: 30px;
         }
         @include desktop-only{
             width: 100%;
-            padding-left: 0;
-            text-align: center;
+            padding-left: 30px;
         }
     }
     &__card{
