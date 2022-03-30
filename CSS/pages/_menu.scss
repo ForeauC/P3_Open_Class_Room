@@ -113,13 +113,13 @@
             animation: spin 0.5s linear;
         }
         &--anim1{
-            animation: fadein 3s;
+            animation: fadein 1.5s;
         }
         &--anim2{
-            animation: fadein 6s;
+            animation: fadein 3s;
         }
         &--anim3{
-            animation: fadein 9s;
+            animation: fadein 4.5s;
         }
         @include desktop-only{
             flex-basis: calc(50% - 30px);

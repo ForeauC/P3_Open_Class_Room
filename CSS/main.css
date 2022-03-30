@@ -524,18 +524,18 @@ a {
 }
 
 .menu__card--anim1 {
+  -webkit-animation: fadein 1.5s;
+          animation: fadein 1.5s;
+}
+
+.menu__card--anim2 {
   -webkit-animation: fadein 3s;
           animation: fadein 3s;
 }
 
-.menu__card--anim2 {
-  -webkit-animation: fadein 6s;
-          animation: fadein 6s;
-}
-
 .menu__card--anim3 {
-  -webkit-animation: fadein 9s;
-          animation: fadein 9s;
+  -webkit-animation: fadein 4.5s;
+          animation: fadein 4.5s;
 }
 
 @media (min-width: 1025px) {
