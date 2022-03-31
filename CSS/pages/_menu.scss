@@ -163,7 +163,7 @@
         &-icon{
             width: 0px;
             visibility: hidden;
-            animation: vanish 1s;
+            transition: width 1s;
             font-size: 0px;
             color: white;
             background-color: $green;

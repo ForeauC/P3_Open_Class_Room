@@ -659,8 +659,8 @@ a {
 .menu__card-icon {
   width: 0px;
   visibility: hidden;
-  -webkit-animation: vanish 1s;
-          animation: vanish 1s;
+  -webkit-transition: width 1s;
+  transition: width 1s;
   font-size: 0px;
   color: white;
   background-color: #99E2D0;
@@ -809,24 +809,6 @@ a {
   }
   100% {
     visibility: visible;
-  }
-}
-
-@-webkit-keyframes vanish {
-  0% {
-    width: 20%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
-@keyframes vanish {
-  0% {
-    width: 20%;
-  }
-  100% {
-    width: 0%;
   }
 }
 /*# sourceMappingURL=main.css.map */

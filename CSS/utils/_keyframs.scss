@@ -49,7 +49,6 @@
 @keyframes appear {
     0%{
         visibility: hidden;
-
     }
     10%{
         visibility: hidden;
@@ -59,14 +58,5 @@
     }
     100%{
         visibility: visible;
-    }
-}
-
-@keyframes vanish{
-    0%{
-        width: 20%
-    }
-    100%{
-        width: 0%;
     }
 }
