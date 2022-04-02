@@ -17,10 +17,22 @@
 .restaurant__img{
     width: 100%;
     height: 270px;
+    @include tablette-only{
+        height: 330px;
+    }
+    @include desktop-only{
+        height: 400px;
+    }
     & img{
         width: 100%;
         height: 270px;
         object-fit: cover;
+        @include tablette-only{
+            height: 330px;
+        }
+        @include desktop-only{
+            height: 400px;
+        }
     }
 }
 
