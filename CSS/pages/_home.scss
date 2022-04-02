@@ -106,6 +106,7 @@
         box-shadow: 2px 5px 16px 0px #c0bfbf;
         position: relative;
         transition: 500ms;
+        cursor: pointer;
         &:hover{
             background-color: rgba(146, 86, 220, 0.13);
         }

@@ -154,6 +154,7 @@ a {
   position: relative;
   -webkit-transition: 500ms;
   transition: 500ms;
+  cursor: pointer;
 }
 
 .functioning__card:hover {
@@ -492,6 +493,7 @@ a {
 
 .menu__name {
   font-family: 'Shrikhand', Verdana, Tahoma, sans-serif;
+  margin-bottom: 10px;
   padding-left: 10px;
 }
 
@@ -517,6 +519,8 @@ a {
   padding-left: 10px;
   font-weight: 200;
   font-size: 18px;
+  margin-left: 5px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -546,45 +550,37 @@ a {
   height: 2px;
   background-color: #99E2D0;
   border: none;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .menu__card {
+  -ms-flex-preferred-size: calc(100% - 20px);
+      flex-basis: calc(100% - 20px);
+  height: 70px;
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 20px;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 10px;
-  margin: 10px;
-  background-color: white;
-  border-radius: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
 }
 
-.menu__card:hover > .menu__card-body {
-  width: 80%;
-  -webkit-transition: width 1s;
-  transition: width 1s;
+.menu__card:hover .menu__card-icon {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 
-.menu__card:hover > .menu__card-icon {
-  visibility: visible;
-  -webkit-animation: appear 1s;
-          animation: appear 1s;
-  width: 20%;
-  height: 69px;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-  font-size: 25px;
-  line-height: 69px;
-  text-align: center;
-  border-radius: 0 20px 20px 0;
-}
-
-.menu__card:hover > .menu__card-icon i {
-  -webkit-animation: spin 0.5s linear;
-          animation: spin 0.5s linear;
+.menu__card:hover .menu__card-icon i {
+  -webkit-animation: spin 400ms ease-in-out;
+          animation: spin 400ms ease-in-out;
 }
 
 .menu__card--anim1 {
@@ -610,33 +606,23 @@ a {
 }
 
 .menu__card-body {
-  width: 100%;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-}
-
-.menu__card-dishe {
+  /*flex-grow: 1;*/
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0;
-  padding-top: 15px;
-  font-size: 18px;
-  font-weight: 400;
 }
 
-.menu__card-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 5px;
+.menu__card-dishe {
+  margin: 0;
+  padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__card-text {
@@ -646,24 +632,42 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 85%;
+}
+
+.menu__card-detail {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 
 .menu__card-price {
   margin: 0;
   padding-right: 20px;
+  padding-top: 40px;
   text-align: end;
-  width: 15%;
 }
 
 .menu__card-icon {
-  width: 0px;
-  visibility: hidden;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-  font-size: 0px;
-  color: white;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  width: 0;
   background-color: #99E2D0;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.menu__card-icon i {
+  color: white;
+  font-size: 25px;
 }
 
 .menu__button {
@@ -786,12 +790,6 @@ a {
   0% {
     visibility: hidden;
   }
-  10% {
-    visibility: hidden;
-  }
-  20% {
-    visibility: visible;
-  }
   100% {
     visibility: visible;
   }
@@ -800,12 +798,6 @@ a {
 @keyframes appear {
   0% {
     visibility: hidden;
-  }
-  10% {
-    visibility: hidden;
-  }
-  20% {
-    visibility: visible;
   }
   100% {
     visibility: visible;

@@ -47,6 +47,7 @@
     }
     &__name{
         font-family: 'Shrikhand', Verdana, Tahoma, sans-serif;
+        margin-bottom: 10px;
         padding-left: 10px;
     }
     &__icon{
@@ -66,6 +67,8 @@
             padding-left: 10px;
             font-weight: 200;
             font-size: 18px;
+            margin-left: 5px;
+            margin-top: 30px;
             margin-bottom: 0;
             &--anim1{
                 animation: fadein 3s;
@@ -84,34 +87,27 @@
                 height: 2px;
                 background-color: $green;
                 border: none;
-                margin-left: 10px; 
+                margin-left: 15px; 
+                margin-top: 5px;
+                margin-bottom: 10px;
             }
         }
     }
     &__card{
-        display: flex;
-        align-items: center;
-        padding-left: 10px;
+        flex-basis: calc(100% - 20px);
+        height: 70px;
         margin: 10px;
-        background-color: white;
+        padding-left: 10px;
         border-radius: 20px;
-        &:hover > &-body{
-            width: 80%;
-            transition: width 1s;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        &:hover &-icon{
+            flex-basis: 20%;
         }
-        &:hover > &-icon{
-            visibility: visible;
-            animation: appear 1s;
-            width: 20%;
-            height: 69px;
-            transition: width 1s;
-            font-size: 25px;
-            line-height: 69px;
-            text-align: center;
-            border-radius: 0 20px 20px 0;
-        }
-        &:hover > &-icon i{
-            animation: spin 0.5s linear;
+        &:hover &-icon i{
+            animation: spin 400ms ease-in-out;
         }
         &--anim1{
             animation: fadein 1.5s;
@@ -126,24 +122,21 @@
             flex-basis: calc(50% - 30px);
         }
         &-body{
-            width: 100%;
-            transition: width 1s;
-        }
-        &-dishe{
+            /*flex-grow: 1;*/
+            flex-basis: 80%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+        &-dishe{
             margin: 0;
-            padding-top: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             font-size: 18px;
             font-weight: 400;
-        }
-        &-detail{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 5px;
-            padding-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &-text{
             margin: 0;
@@ -152,21 +145,29 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            width: 85%;
+        }    
+        &-detail{
+            flex-basis: 20%;
         }
         &-price{
             margin: 0;
             padding-right: 20px;
+            padding-top: 40px;
             text-align: end;
-            width: 15%;
         }
         &-icon{
-            width: 0px;
-            visibility: hidden;
-            transition: width 1s;
-            font-size: 0px;
-            color: white;
+            flex-basis: 0;
+            width: 0;
             background-color: $green;
+            transition: all 400ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            & i{
+                color:white;
+                font-size: 25px;
+            }
         }
     }
     &__button{
@@ -174,7 +175,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
         @include desktop-only{
-            width: 100%;
+        width: 100%;
         }
         & button{
             width: 180px;
@@ -186,7 +187,7 @@
             font-weight: 600;
             cursor: pointer;
         }
-    }
+    } 
 }
 
 .footer--menu{
