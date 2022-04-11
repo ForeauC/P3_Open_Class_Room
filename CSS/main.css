@@ -436,7 +436,9 @@ a {
 
 .header-menu__logo {
   font-family: 'Shrikhand', Verdana, Tahoma, sans-serif;
-  padding-left: 60px;
+  /*padding-left: 60px;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*-------- Restaurant picture ------*/
